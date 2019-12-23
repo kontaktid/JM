@@ -13,7 +13,6 @@ public class Application {
 
             a = scanner.nextInt();
 
-            b = scanner.nextInt();
             showMenu();
             int number = scanner.nextInt();
             if (number == 0 & number > 10) {
@@ -23,6 +22,9 @@ public class Application {
             Operation operation = getOperation(number);
             operation.calculate(a,b);
             System.out.println();
+
+            b = scanner.nextInt();
+
         }
     }
 
@@ -42,10 +44,10 @@ public class Application {
 
     private void showMenu(){
         System.out.println("Выберите операцию");
-        System.out.println("1 - Addition;");
-        System.out.println("2 - Subtract;");
-        System.out.println("3 - Multiplication;");
-        System.out.println("4 - Division;");
+        System.out.println("1 - ");
+        System.out.println("2 + ");
+        System.out.println("3 * ");
+        System.out.println("4 / ");
         System.out.println("0 - Exit.");
     }
 }
